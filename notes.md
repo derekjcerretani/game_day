@@ -25,3 +25,20 @@ end
 task :console do
   Pry.start
 end
+
+- A command line interface for sports, starting with the NBA.
+
+user types game_day
+
+shows NBA games
+
+Which game would you like to know more about?
+
+What is a game?
+
+A game has two teams
+A game has a Time
+
+What is a team?
+
+A team has a record
