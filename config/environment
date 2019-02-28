@@ -1,0 +1,8 @@
+require 'pry'
+require 'nokogiri'
+require 'open-uri'
+
+require_relative '../lib/game_day/scraper'
+require_relative '../lib/game_day/game'
+require_relative '../lib/game_day/cli'
+require_relative '../lib/game_day/version'

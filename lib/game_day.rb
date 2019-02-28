@@ -1,8 +1,4 @@
-require_relative "./game_day/version"
+module GameDay
+end
 
-# module GameDay
-#   class Error < StandardError; end
-#   # Your code goes here...
-# end
-
-require_relative './game_day/cli'
+require_relative '../config/environment'
