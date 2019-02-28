@@ -1,5 +1,0 @@
-#!/usr/bin/env ruby
-
-require '../lib/game_day'
-
-GameDay::CLI.new.call

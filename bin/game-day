@@ -1,0 +1,8 @@
+#!/usr/bin/env ruby
+
+#How do I load the files in lib?
+
+#require_relative '../config/environment'
+require './lib/game_day'
+
+GameDay::CLI.new.call

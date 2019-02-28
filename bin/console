@@ -1,5 +1,14 @@
 #!/usr/bin/env ruby
 
+require "irb"
+
+def reload!
+  load_all './lib'
+  # needs to not just re-load environement but rather reload everything in environment.
+end
+
+
+
 require "bundler/setup"
 require "game_day"
 
@@ -10,5 +19,4 @@ require "game_day"
 # require "pry"
 # Pry.start
 
-require "irb"
 IRB.start(__FILE__)
