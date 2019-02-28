@@ -38,7 +38,7 @@ class GameDay::CLI
   end
 
   def game_info(input)
-    game = @games[input.to_i]
+    game = @@all[input.to_i]
     #puts out the time of the game if it's in the future, live! if it's on now, and final score if it's over
     puts "#{game.team_1} vs #{game.team_2} #{game.time} EST"
   end

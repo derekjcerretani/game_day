@@ -4,7 +4,7 @@ class GameDay::Game
 
     attr_accessor :team_1, :team_2, :time, :live
 
-    @@games = []
+    @@all = []
 
     def self.today
       #I should return a bunch of instances of games
@@ -13,7 +13,7 @@ class GameDay::Game
       #   2. Minnesota Timberwolves vs Atlanta Hawks
       #   3. Washington Wizards vs Brooklyn Hornets
       # DOC
-      @@games.each.with_index(1) do |game, index|
+      GameDay::Game.all.each.with_index(1) do |game, index|
         puts "#{index}. #{game.team_1} vs #{game.team2}"
       end
     end
@@ -23,10 +23,10 @@ class GameDay::Game
       @team_2 = team_2
       @time = time
       @live = live
-      @@games << self
+      @@all << self
     end
 
-    def self.games
-      @@games
+    def self.all
+      @@all
     end
 end
