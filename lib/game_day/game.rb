@@ -2,7 +2,7 @@ require_relative './version'
 
 class GameDay::Game
 
-    attr_accessor :team_1, :team_2, :time, :live
+    attr_accessor :team_1, :team_2, :time, :live, :wins, :losses
 
     @@all = []
 
@@ -18,11 +18,13 @@ class GameDay::Game
       end
     end
 
-    def initialize(team_1 = nil, team_2 = nil, time = nil, live = false)
+    def initialize(team_1 = nil, team_2 = nil, time = nil, live = false, wins = 0, losses = 0)
       @team_1 = team_1
       @team_2 = team_2
       @time = time
       @live = live
+      @wins = wins
+      @losses = losses
       @@all << self
     end
 
